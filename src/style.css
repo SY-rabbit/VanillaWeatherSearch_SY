@@ -7,3 +7,81 @@ footer {
 a {
   color: lightpink;
 }
+body {
+  background-color: rgb(250, 235, 246);
+  font-family: "Indie Flower", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.main-body {
+  background-color: white;
+  margin: 35px auto;
+  box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
+  border-radius: 10px;
+  padding: 30px;
+  max-width: 1000px;
+}
+
+.search-bar {
+  font-family: "Indie Flower", cursive;
+  background-color: white;
+  border: 0.5px solid #d4d3d9;
+  border-radius: 5px;
+  padding: 10px;
+  width: 80%;
+  color: darkgray;
+  font-size: large;
+}
+
+.search-button {
+  background-color: #f77cd6;
+  border: none;
+  border-radius: 5px;
+  color: #f9f7fe;
+  padding: 10px 15px;
+  width: 15%;
+  font-family: "Indie Flower", cursive;
+  font-size: larger;
+}
+
+header {
+  padding: 20px 0;
+}
+h1 {
+  font-family: "Indie Flower", cursive;
+  font-size: 40px;
+  color: black;
+  text-align: left;
+  font-weight: bolder;
+}
+
+.current-temp {
+  display: flex;
+  justify-content: center;
+  font-size: 60px;
+}
+
+.temp-unit {
+  font-size: 20px;
+  position: relative;
+  top: -5px;
+}
+.weather-emoji {
+  position: relative;
+  padding-left: 10px;
+  top: 10px;
+  font-size: 25px;
+}
+.weather-description {
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+}
+
+.weather-details {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  font-size: 25px;
+}
