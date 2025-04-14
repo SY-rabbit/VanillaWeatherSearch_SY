@@ -60,10 +60,9 @@ header {
 .date-and-time {
   font-family: "Indie Flower", cursive;
   font-size: 25px;
-  text-align: left; 
+  text-align: left;
   color: #f54cc8;
 }
-
 
 .current-weather {
   display: flex;
@@ -78,12 +77,14 @@ header {
   position: relative;
   top: 5px;
 }
-.weather-emoji {
+.weather-icon {
   position: relative;
   padding-left: 10px;
-  top: 10px;
-  font-size: 25px;
+  top: -10px;
+  width: 70px;
+  height: 60px;
 }
+
 .description {
   font-size: 30px;
   color: black;
@@ -103,6 +104,16 @@ header {
   justify-content: center;
   flex-direction: row;
   font-size: 25px;
+}
+
+.clothing-icons {
+  font-size: 25px;
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 10px;
 }
 
 #humidity-icon {

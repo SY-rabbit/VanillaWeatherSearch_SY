@@ -7,6 +7,7 @@ function getWeather(response) {
   let windElement = document.querySelector("#wind-speed");
   let timeElement = document.querySelector("#date-and-time");
   let date = new Date(response.data.time * 1000);
+  let iconElement = document.querySelector("#weather-icon");
 
   cityElement.innerHTML = response.data.city;
   tempElement.innerHTML = Math.round(CityTemp);
@@ -16,6 +17,11 @@ function getWeather(response) {
   timeElement.innerHTML = `${date.getDate()} / ${
     date.getMonth() + 1
   } / ${date.getFullYear()} ${formatDate(date)}`;
+  iconElement.setAttribute(
+    "src",
+    `https://shecodes-assets.s3.amazonaws.com/api/weather/icons/${response.data.condition.icon}.png`
+  );
+  iconElement.setAttribute("alt", response.data.condition.description);
 }
 
 function formatDate(date) {
@@ -54,3 +60,5 @@ function searchResult(event) {
 
 let form = document.querySelector("form");
 form.addEventListener("submit", searchResult);
+
+
