@@ -57,17 +57,24 @@ header {
   font-weight: bolder;
 }
 
+.date-and-time {
+  font-family: "Indie Flower", cursive;
+  font-size: 25px;
+  text-align: left; 
+  color: #f54cc8;
+}
+
+
 .current-weather {
   display: flex;
   justify-content: center;
 }
 .current-temp {
   font-size: 60px;
-
 }
 
 .temp-unit {
-  font-size: 20px;
+  font-size: 30px;
   position: relative;
   top: 5px;
 }
@@ -77,15 +84,33 @@ header {
   top: 10px;
   font-size: 25px;
 }
-.weather-description {
-  display: flex;
-  justify-content: center;
+.description {
   font-size: 30px;
+  color: black;
+  text-align: center;
 }
 
 .weather-details {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 30px;
+}
+
+.clothing-advice {
   display: flex;
   justify-content: center;
   flex-direction: row;
   font-size: 25px;
+}
+
+#humidity-icon {
+  font-variation-settings: "FILL" 00, "wght" 400, "GRAD" 00, "opsz" 24;
+  font-size: 30px;
+}
+
+#air-icon {
+  font-variation-settings: "FILL" 0, "wght" 300, "GRAD" 0, "opsz" 24;
+  font-size: 30px;
 }

@@ -11,6 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=Delius&family=Indie+Flower&family=Love+Ya+Like+A+Sister&family=Pacifico&display=swap"
       rel="stylesheet"
     />
+   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link rel="stylesheet" href="src/style.css" />
     
   </head>
@@ -31,24 +32,25 @@
 
       <h1><div class="city" id="city">Your City</div></h1>
       <p>
-        time, date
+        <div class="date-and-time" id="date-and-time">
+         time and date
+          </div>
+        
         <br />
         <div class="current-weather">
         <div class="current-temp" id="current-temp">current temp</div>
             <div class="temp-unit">°C</div>
-            <div class="weather-emoji">
-            weather emoji</div>
+        </div>
+        <div class="description" id="description">weather description</div>
+        <br />
+        <div class="weather-details">
+            <span class="material-symbols-outlined" id="humidity-icon">humidity_percentage</span> <span class ="humidity" id="humidity">humidity</span> % |  
+          <span class="material-symbols-outlined" id="air-icon">air</span><span class ="wind-speed" id="wind-speed">wind speed</span>km/h | 
+          <span class="weather-icon" id="weather-icon">weather icon</span>
         </div>
         <br />
-        <div class="weather-description">
-        min, max, description
-        </div>
-        <br />
-        <div class="weather-details"> 
-        <span class ="humidity">humidity</span> | 
-        <span class ="wind-speed">wind speed</span> | 
-        <span class ="clothing-advice">clothing advice</span>
-        
+        <div class="clothing-advice"> 
+       clothing advice
         </div>
       </p>
 
