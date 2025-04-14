@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather Application_SY-rabbit</title>
+    <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -11,6 +12,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="src/style.css" />
+    
   </head>
   <body>
     <div class="main-body">
@@ -27,11 +29,12 @@
         </form>
       </header>
 
-      <h1>Paris</h1>
+      <h1><div class="city" id="city">Your City</div></h1>
       <p>
         time, date
         <br />
-        <div class="current-temp">current temp
+        <div class="current-weather">
+        <div class="current-temp" id="current-temp">current temp</div>
             <div class="temp-unit">°C</div>
             <div class="weather-emoji">
             weather emoji</div>
@@ -42,7 +45,10 @@
         </div>
         <br />
         <div class="weather-details"> 
-        humidity | wind speed | clothing advice
+        <span class ="humidity">humidity</span> | 
+        <span class ="wind-speed">wind speed</span> | 
+        <span class ="clothing-advice">clothing advice</span>
+        
         </div>
       </p>
 

@@ -48,7 +48,8 @@ body {
 header {
   padding: 20px 0;
 }
-h1 {
+
+.city {
   font-family: "Indie Flower", cursive;
   font-size: 40px;
   color: black;
@@ -56,16 +57,19 @@ h1 {
   font-weight: bolder;
 }
 
-.current-temp {
+.current-weather {
   display: flex;
   justify-content: center;
+}
+.current-temp {
   font-size: 60px;
+
 }
 
 .temp-unit {
   font-size: 20px;
   position: relative;
-  top: -5px;
+  top: 5px;
 }
 .weather-emoji {
   position: relative;
