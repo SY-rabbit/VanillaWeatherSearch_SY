@@ -61,4 +61,24 @@ function searchResult(event) {
 let form = document.querySelector("form");
 form.addEventListener("submit", searchResult);
 
+function displayforecast() {
+  let days = ["Tue", "Wed", "Thu", "Fri", "Sat"];
+  let forecastHTML = "";
 
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `<div class="forecast-day">
+    <div class="forecast-icon">icon</div>
+    <div class="forecast-date">${day}</div>
+    <div class="forecast-max-temp">maxtemp<span class="forecat-temp-unit-max">°C</span></div>
+    <div class="forecast-min-temp">mintemp<span class="forecat-temp-unit-min">°C</span></div>
+</div>`;
+  });
+
+  let forecastELement = document.querySelector("#forecast");
+  forecastELement.innerHTML = forecastHTML;
+}
+
+searchCity("London");
+displayforecast();
