@@ -109,53 +109,58 @@ header {
   font-size: 30px;
 }
 
-.weather-forecast {
+h2 {
   font-family: "Indie Flower", cursive;
   font-size: 25px;
   text-align: left;
   color: #f54cc8;
 }
 
-.weekly-forecast {
+.forecast-day {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   padding-left: 35px;
   margin-top: 20px;
 }
 .forecast-max-temp {
-  font-size: 25px;
+  font-size: 30px;
   color: #f902b7;
   position: relative;
-  top: -60px;
+  top: 30px;
+  left: -25px;
+}
+.forecat-temp-unit-max {
+  font-size: 20px;
+  color: #f902b7;
+  position: relative;
+  top: -15px;
   left: 10px;
 }
 .forecast-min-temp {
-  font-size: 25px;
+  font-size: 30px;
   color: #f393da;
   position: relative;
-  top: -50px;
-  left: 10px;
+  top: 70px;
+  left: -60px;
+}
+.forecat-temp-unit-min {
+  font-size: 20px;
+  color: #f393da;
+  position: relative;
+  top: -8px;
+  left: 3px;
 }
 
 .forecast-date {
-  font-size: 35px;
+  font-size: 25px;
   color: black;
   position: relative;
   left: -60px;
+  top: 50px;
 }
 
-.forecat-temp-unit-max {
-  font-size: 15px;
-  color: #f902b7;
+.forecast-icon {
   position: relative;
-  top: -10px;
-  left: 5px;
-}
-
-.forecat-temp-unit-min {
-  font-size: 15px;
-  color: #f393da;
-  position: relative;
-  top: -9px;
-  left: 5px;
+  top: -50px;
+  width: 20px;
 }
